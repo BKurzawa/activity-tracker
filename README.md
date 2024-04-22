@@ -3,8 +3,7 @@
 This apps allows you to track your favorite activity like running or biking - even when the app is backgrounded!
 You can then save it to your device to track your progress.
 
-<img width="300px" src="src\assets\images\Screenshot_2.png" alt="screenshot_2" />
-<img width="300px" src="src\assets\images\Screenshot_1.png" alt="screenshot_1" />
+<img width="300px" src="src\assets\images\Screenshot_2.png" alt="screenshot_2" /><img width="300px" src="src\assets\images\Screenshot_1.png" alt="screenshot_1" />
 
 ## Development Setup
 
