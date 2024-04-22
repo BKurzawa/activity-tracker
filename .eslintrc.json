@@ -1,0 +1,54 @@
+{
+	"extends": [
+		"universe",
+		"universe/native",
+		"universe/web",
+		"universe/shared/typescript-analysis",
+		"prettier"
+	],
+	"overrides": [
+		{
+			"files": ["*.ts", "*.tsx", "*.d.ts"],
+			"parserOptions": {
+				"project": "./tsconfig.json"
+			}
+		}
+	],
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": "latest"
+	},
+	"plugins": ["react-hooks", "simple-import-sort", "prettier"],
+	"rules": {
+		"prettier/prettier": "error",
+		"simple-import-sort/imports": [
+			"error",
+			{
+				"groups": [
+					// `react` first, `react-native` second, then packages starting with a character
+					["^react$", "^react-native$", "^[a-z]"],
+					// Packages starting with `@`
+					["^@"],
+					// Packages starting with `~`
+					["^~"],
+					// Imports starting with `../`
+					["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+					// Imports starting with `./`
+					["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+					// Style imports
+					["^.+\\.s?css$"],
+					// Side effect imports
+					["^\\u0000"]
+				]
+			}
+		],
+		"simple-import-sort/exports": "error",
+		// "import/first": "error",
+		"import/newline-after-import": "error",
+		"import/no-duplicates": "error",
+		"import/order": 0
+	},
+	"env": {
+		"node": true
+	}
+}

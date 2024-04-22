@@ -1,0 +1,14 @@
+{
+	"overrides": [
+		{
+			"files": ["package.json"],
+			"options": { "parser": "json" }
+		}
+	],
+	"bracketSpacing": true,
+	"bracketSameLine": true,
+	"proseWrap": "never",
+	"singleAttributePerLine": false,
+	"trailingComma": "all",
+	"useTabs": true
+}

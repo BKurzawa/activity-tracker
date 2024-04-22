@@ -1,0 +1,42 @@
+{
+	"expo": {
+		"name": "activity-tracker",
+		"slug": "activity-tracker",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./src/assets/icon.png",
+		"userInterfaceStyle": "light",
+		"splash": {
+			"image": "./src/assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./src/assets/adaptive-icon.png",
+				"backgroundColor": "#ffffff"
+			},
+			"package": "com.b126.activitytracker",
+			"config": {
+				"googleMaps": {
+					"apiKey": "YOUR_GOOGLE_API_KEY"
+				}
+			}
+		},
+		"web": {
+			"favicon": "./src/assets/favicon.png"
+		},
+		"plugins": [
+			[
+				"expo-location",
+				{
+					"isAndroidBackgroundLocationEnabled": true
+				}
+			]
+		]
+	}
+}
